@@ -59,7 +59,7 @@ form.addEventListener("submit", (e) => {
    
    if(validateUserName && validateEmail && validatePassword && validateConfirm){
      fetchData();
-    //  window.location.href = 'login.html';
+     window.location.href = 'login.html';
     console.log("ok")
    }
   else{
