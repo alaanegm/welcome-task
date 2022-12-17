@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	 <section class="container">
+     <div class="login">
+     <div class="login-image">
+     </div>
+     <div class="login-content">
+       <h2>Successfully logged in</h2>
+       <a id="getemail"></a>
+     </div>
+     </div>
+     </section>
+    <script>
+        window.onload = function() {
+            document.getElementById('getemail').innerText = sessionStorage.getItem('email');
+        };
+    </script>
+</body>
+
+</html>

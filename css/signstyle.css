@@ -1,0 +1,251 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background:url(../images/screen.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:100%;
+}
+ .sign-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  min-height:100vh;
+  height:100% ;
+  } 
+.sign-up{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 60px;
+  max-width:1080px;
+  width: 90%;
+  max-height: 90%;
+  height:656px;
+  background: rgba(245, 247, 255, 0.85);
+  border-radius: 10px;
+ 
+}
+.signup-image{
+    background:url(../images/sign.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    flex:1;
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+
+    /* background:black; */
+}
+.signup-content{
+  flex:1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 40px;  
+}
+.account-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+.account-content h2{
+font-family: ' Abdoullah Ashgar EL-kharef';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 120%;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+color: #2D2D2D;
+
+}
+.account-content p{
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 160%;
+color: #1F1249;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width:100%;
+}
+.input-container{
+ position:relative;
+width:100%;
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 12px;
+margin-top: 10px;
+height:60px;
+background: #FFFFFF;
+border: 1px solid #DBE3FF;
+border-radius: 10px;
+padding: 8px 20px;
+}
+input{
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+display: flex;
+align-items: center;
+color: #3B3B3B;
+height: 100%;
+width: 100%;
+outline: none;
+border:none;
+
+}
+
+.input-icon {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+width: 29px;
+height: 20px;
+border-right: 2px solid #DBE3FF;
+}
+small {
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #e75c3c;
+position: absolute;
+left: 15px;
+    bottom: -20px;
+visibility: hidden;
+}
+ button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 50px;
+width: 100%;
+height: 60px;
+margin-top: 10px;
+border: none;
+background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+box-shadow: 0px 6px 18px #9CADF2;
+border-radius: 10px;
+}
+
+
+.input-container.error small {
+  visibility: visible;
+}
+
+.input-container.error input {
+  border-color: #e75c3c;
+
+}
+
+.input-container.success input {
+  border-color: #2ecc71;
+}
+
+/* small {
+   visibility: hidden; 
+  width: 300px;
+  background: #FFFFFF;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 124%;
+  left: 50%;
+  margin-left: -80px;
+}
+small::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #FFFFFF transparent transparent transparent;
+} */
+@media screen and (max-width: 880px) {
+  body{
+    background-image: none;
+    width:100%;
+    background: rgba(245, 247, 255, 0.85);
+  }
+  .container{
+    background: rgba(245, 247, 255, 0.85);
+    width:100%;
+  }
+  .sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    gap: 60px;
+    max-width:1080px;
+    width: 90%;
+    max-height: 90%;
+    height:931px;
+    padding:0;
+  }
+  .signup-image{
+    width:100%;
+    height:50%;
+     flex:auto;
+     object-fit:contain;
+     background-position: center;
+    /* height: 100%; */
+}
+.signup-content{
+     width:100%;
+     flex:auto;
+     height:49%;
+     text-align: center;
+}
+.account-content{
+  align-items: center;
+}
+.account-content h2{
+  font-size: 32px;
+  text-align: center;
+}
+.account-content p{
+  font-size: 16px;
+}
+}
+input:-internal-autofill-selected {
+  background-color: none;
+}
